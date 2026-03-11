@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace App.Host.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [[Route("api/v1/countries")]
     public class CountryController(ICountryManager CountryManager) : ControllerBase
     {
         [HttpGet]
@@ -37,7 +37,7 @@ namespace App.Host.Controllers
             return CreatedAtAction(nameof(Get), new { id = created.Id }, created);
         }
 
-        [HttpPatch("{id:int}")]
+  [HttpPut("{id:int}")]
         public async Task<IActionResult> Update(int id, [FromBody] UpdateCountryRequestDTO request)
         {
             if (id != request.Id)
@@ -45,7 +45,7 @@ namespace App.Host.Controllers
                 return BadRequest("Id in URL and request body must match");
             }
 
-            try
+try
             {
                 var updated = await CountryManager.UpdateAsync(request);
                 return Ok(updated);

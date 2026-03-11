@@ -5,10 +5,10 @@ namespace App.Manager.Countries
 {
     public interface ICountryManager
     {
-        Task<CountryDTO> GetAsync(int cityId);
+        Task<CountryDTO> GetAsync(int countryId
         Task<List<CountryDTO>> GetAllAsync();
         Task<CountryDTO> CreateAsync(CreateCountryRequestDTO request);
         Task<CountryDTO> UpdateAsync(UpdateCountryRequestDTO request);
-        Task DeleteAsync(int cityId);
+        Task DeleteAsync(int countryId
     }
 }
