@@ -5,7 +5,7 @@ using App.Manager.Cities.DTO;
 
 namespace App.Manager.Cities
 {
-    internal class CityManager(ICityValidationEngine ValidationEngine, ICityAccess CityAccess) : ICityManager
+    public class CityManager(ICityValidationEngine ValidationEngine, ICityAccess CityAccess) : ICityManager
     {
         public async Task<CityDTO> CreateAsync(CreateCityRequestDTO request)
         {
