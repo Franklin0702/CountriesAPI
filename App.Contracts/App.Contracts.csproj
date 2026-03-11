@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Cities\CityDTO.cs" />
+    <Compile Remove="Cities\CreateCityRequest.cs" />
+    <Compile Remove="Countries\CountryDTO.cs" />
+    <Compile Remove="Countries\CreateCountryRequest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Cities\CreateCityRequest.cs" />
+    <None Include="Cities\CityDTO.cs" />
+    <None Include="Countries\CountryDTO.cs" />
+    <None Include="Countries\CreateCountryRequest.cs" />
+  </ItemGroup>
+
+</Project>

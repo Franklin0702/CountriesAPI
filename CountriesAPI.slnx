@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="App.Access/App.Access.csproj" />
+  <Project Path="App.Engine/App.Engine.csproj" />
+  <Project Path="App.Host/App.Host.csproj" />
+  <Project Path="App.Manager/App.Manager.csproj" />
+  <Project Path="App.Tests/App.Tests.csproj" />
+</Solution>
